@@ -3,8 +3,8 @@
 
 int cuadradoNum(int a);
 void cuadNum(int a);
-void Invertir(a,b);
-
+void Invertir(int a, int b);
+void orden(int a, int b);
 
 int main() {
 
@@ -16,6 +16,9 @@ int main() {
     
     printf("Ingrese otro numero: ");
     scanf("%d", &num2);
+
+    Invertir(num1,num2);
+    orden(num1,num2);
 
 
 
@@ -46,7 +49,7 @@ void cuadNum (int a)
 
 }
 
-void Invertir(a,b) 
+void Invertir(int a, int b) 
 {
     int aux;
     printf("Los valores ingresados fueron: %d %d\n",a,b);
@@ -56,5 +59,19 @@ void Invertir(a,b)
     a = b;
     b = aux;
 
-    printf("Al invertirlos queda lo siguiente:\na = %d\nb = %d", a,b);
+    printf("Al invertirlos queda lo siguiente:\na = %d\nb = %d\n", a,b);
+}
+
+void orden (int a, int b)
+{
+    int aux;
+
+    if (a > b)
+    {
+        aux = a;
+        a = b;
+        b = aux;
+    }
+    
+    printf("Los numeros ingresados ordenados son: %d %d",a,b);
 }
