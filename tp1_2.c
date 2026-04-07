@@ -3,6 +3,8 @@
 
 int cuadradoNum(int a);
 void cuadNum(int a);
+void Invertir(a,b);
+
 
 int main() {
 
@@ -40,6 +42,19 @@ void cuadNum (int a)
     c = pow(a,b);
     printf("El cuadrado del numero ingresado es: %d\n", c);
 
-    
 
+
+}
+
+void Invertir(a,b) 
+{
+    int aux;
+    printf("Los valores ingresados fueron: %d %d\n",a,b);
+    
+    aux = a;
+
+    a = b;
+    b = aux;
+
+    printf("Al invertirlos queda lo siguiente:\na = %d\nb = %d", a,b);
 }
